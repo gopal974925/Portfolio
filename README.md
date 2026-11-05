@@ -48,7 +48,8 @@ The site content is currently a starter portfolio. Before publishing, update the
 
 - Edit the introduction, social links, and email in `src/components/home.astro`.
 - Replace the sample project titles, images, GitHub links, and previews in `src/components/projects.astro`.
-- Set your location and replace `YOUR_FORM_ID_HERE` with your Formspree form ID in `src/components/contact.astro`. The contact form will not submit successfully until it has a valid endpoint.
+- Set your location in `src/components/contact.astro` and update the Formspree endpoint in the `mailApiUrl` constant to your own form URL.
+- The contact form is configured to submit directly to Formspree. If you want to change the destination, update the endpoint in `src/components/contact.astro`.
 - Update the social links in `src/components/footer.astro`.
 - Change the site title, description, canonical URL, and Open Graph metadata in `src/layouts/Layout.astro`.
 

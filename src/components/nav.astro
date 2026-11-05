@@ -56,7 +56,6 @@ const navItems: NavItem[] = [
 </div>
 <style>
   nav {
-    transform: translateX(-50%);
     background-color: var(--background);
     transition:
       background-color 0.3s ease,
@@ -82,7 +81,6 @@ const navItems: NavItem[] = [
   @media (max-width: 767px) {
     nav {
       width: 100% !important;
-      transform: translateX(-50%);
       bottom: 0;
       left: 50%;
       position: fixed;
@@ -95,7 +93,7 @@ const navItems: NavItem[] = [
       background-color: var(--component-bg);
     }
 
-    body {
+    :global(body) {
       padding-bottom: 70px;
     }
   }
@@ -176,15 +174,3 @@ const navItems: NavItem[] = [
     sections.forEach((section) => observer.observe(section));
   });
 </script>
-
-<style>
-  @media (max-width: 767px) {
-    body {
-      padding-bottom: 70px;
-    }
-  }
-
-  nav a.active {
-    color: white !important;
-  }
-</style>
